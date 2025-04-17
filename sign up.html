@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rental Wishlist - Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  
+  <header>
+    <div class="container2">
+        <div class="logo">
+            <img src="logo.jpeg" height="10%" width="10%">
+            <h1>Rent or Vent</h1>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="listing.html">Listings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sign up.html" class="button">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>  
+    </div>
+</header>
+
+  <!-- Navbar -->
+  <!-- <div class="navbar">
+    <h1>Rental Wishlist</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Properties</a>
+      <a href="#">Login</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div> -->
+  
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <h2>Welcome to Your Rental Wishlist</h2>
+    <p>Create your free account to save properties, get alerts, and compare your favorite homes — all in one place.</p>
+  </div>
+
+  <!-- Signup Form Section -->
+  <div class="signup-container">
+    <h3>Sign Up</h3>
+    <form onsubmit="return validateForm()">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" minlength="6" required>
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" minlength="6" required>
+
+      <!-- <label>Account Type:</label>
+      <div class="radio-group">
+        <input type="radio" id="tenant" name="account_type" value="tenant" required>
+        <label for="tenant">Tenant</label>
+        <input type="radio" id="owner" name="account_type" value="owner">
+        <label for="owner">Owner</label>
+      </div> -->
+
+      <button type="submit">Create Account</button>
+      <div class="error" id="error-msg"></div>
+    </form>
+  </div>
+
+  </div>
+  <script>
+    function validateForm() {
+      const pass = document.getElementById("password").value;
+      const confirmPass = document.getElementById("confirm-password").value;
+      const errorMsg = document.getElementById("error-msg");
+
+      if (pass !== confirmPass) {
+        errorMsg.textContent = "Passwords do not match!";
+        return false;
+      }
+
+      errorMsg.textContent = "";
+      alert("Account created successfully!");
+      return true;
+    }
+  </script>
+
+
+  <!-- Footer -->
+  <!-- <footer>
+    <div class="container">
+        <p>&copy; 2025 Rental Property Wishlist. All rights reserved.<br>contect us<br>+91 9727179353</p>
+    </div>
+</footer> -->
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Left Column: Site Info -->
+    <div class="footer-section">
+      <h2>Rental Property Wishlist</h2>
+      <p>&copy; 2025 All rights reserved.</p>
+      <p>📞 +91 9727179353</p>
+      <p>📧 support@rentalwishlist.com</p>
+      <p>🕒 Mon–Fri: 9am - 6pm</p>
+    </div>
+
+    <!-- Middle Column: Quick Links & Newsletter -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="listing.html">Properties</a></li>
+        <li><a href="FQAs.html">FAQs</a></li>
+        <li><a href="pp.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+      <!-- <h3>Subscribe</h3>
+      <p>Get latest rental alerts & tips.</p>
+      <input type="email" placeholder="Your email">
+      <button>Subscribe</button>
+    </div> -->
+
+    <!-- Right Column: Socials + Apps + Map -->
+    <div class="footer-section">
+      <h3>Connect with us</h3>
+      <div class="social-icons">
+        <!-- <li><a href=”#”><i class="fa fa-facebook"></i></a></li> -->
+        <a href="#"><img src="insta.jpeg" alt="Instagram">
+          <span>rental_property09</span><br><br></a>
+        <a href="#"><img src="linkedin.png" alt="LinkedIn">
+          <span>/in/your-linkedin-id</span><br></a>
+        
+      </div>
+
+      <!-- <h3>Download App</h3>
+      <div class="app-buttons">
+        <a href="#"><img src="google-play-badge.png" alt="Google Play"></a>
+        <a href="#"><img src="app-store-badge.png" alt="App Store"></a>
+      </div> -->
+
+      <!-- <h3>Office Location</h3>
+      <p>123, Satellite Road, Ahmedabad, Gujarat - 380015</p>
+      <iframe src="https://maps.google.com/maps?q=ahmedabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" style="width:100%; height:100px;"></iframe> -->
+    </div>
+  </div>
+  </footer>
+
+</body>
+</html>

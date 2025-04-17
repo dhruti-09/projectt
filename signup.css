@@ -1,0 +1,501 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(253, 253, 227);
+    /* display: flex; */
+    /* flex-direction: column;
+    min-height: 100vh; */
+    color: #333;
+  }
+  
+    .container2 {
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 30px;
+  }
+
+header {
+  background-color: black;
+  padding: 2% 0;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 15px;
+  padding-left: 1%;
+}
+.logo img {
+  height: 45px;
+  width: auto;
+  display: inline-block;
+}
+
+.logo h1 {
+  position: absolute;
+  width: 200px;
+  padding-left: 27px;
+  margin: 0;
+  top: 0;
+  margin-top: 0px;
+  color: white;
+  font-size: 1.7rem;
+  /* margin-right: 105px; */
+  display: inline;
+  /* vertical-align: middle; */
+}
+
+
+  /* Navbar */
+  /* .navbar {
+    background-color: #2c3e50;
+    padding: 15px 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
+  .navbar nav a:hover {
+    text-decoration: underline;
+  } */
+  nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  /* color: #007bff; */
+  /* background-color: rgba(255, 255, 255, 0.1);
+  
+  */
+  color: black;
+  background-color: #fff;
+  font-weight: bold;
+}
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #cfd6de;
+}
+
+
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+
+  .hero-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .hero-section p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* Signup Form (Now fully separate from hero) */
+  .signup-container {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 60px auto 40px auto; /* no negative margin */
+  }
+
+  .signup-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #34495e;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  /* Footer
+  footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+} */
+
+.footer {
+    background: #2e2e2e;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: sans-serif;
+    animation: fadeIn 1s ease-in;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    flex: 1 1 250px;
+    min-width: 250px;
+    
+  }
+
+  .footer-section h2, .footer-section h3 {
+    color: #f8c146;
+    margin-bottom: 10px;
+    
+    
+
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section li {
+    margin: 6px 0;
+   
+  }
+
+  .footer-section a {
+   
+    color: #ddd;
+    text-decoration: none;
+    
+  }
+
+  .footer-section a:hover {
+    color: #8bbcd1;
+    text-decoration: underline;
+  }
+
+  .footer-section input {
+    padding: 8px;
+    margin-top: 8px;
+    width: 70%;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .footer-section button {
+    padding: 8px 12px;
+    margin-top: 10px;
+    background: #f8c146;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* .social-icons {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 12px;
+} */
+
+  .social-icons img
+  
+   {
+    width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+  
+    
+  }
+
+  /* .app-buttons img 
+  {
+    width: 120px;
+    margin-top: 10px;
+  } */
+
+  /* .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    z-index: 999;
+  } */
+
+  /* .whatsapp-float img {
+    width: 50px;
+  } */
+
+  /* @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  } */
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  }
+
+
+  @media (max-width: 480px) {
+    .signup-container {
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    .hero-section h2 {
+      font-size: 26px;
+    }
+
+    .hero-section p {
+      font-size: 16px;
+    }
+
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .navbar nav a {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+    }
+  }
+  /* Make navigation responsive */
+/* @media (max-width: 768px) {
+.container2 {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+nav ul {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+.logo h1 {
+  font-size: 1.4rem;
+}
+
+.logo img {
+  height: 40px;
+}
+} */
+   /* Responsive Design Improvements */
+   @media (max-width: 1024px) {
+    .property-item {
+      width: 45%;
+    }
+
+    .hero {
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+
+    .hero-image, .hero-text {
+      width: 100%;
+      padding: 1rem 0;
+    }
+
+    .content1 {
+      margin: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container2 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    nav ul li {
+      margin: 10px 0;
+    }
+
+    .box {
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .property-list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .property-item {
+      width: 90%;
+    }
+
+    .footer-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .footer-section {
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .logo h1 {
+      font-size: 1.3rem;
+    }
+
+    .footer-section h2, .footer-section h3 {
+      font-size: 18px;
+    }
+
+    .social-icons img {
+      width: 30px;
+    }
+  }
+
+/* Adjust hero text */
+@media (max-width: 768px) {
+.hero-section {
+  padding: 50px 15px;
+}
+
+.hero-section h2 {
+  font-size: 24px;
+}
+
+.hero-section p {
+  font-size: 16px;
+}
+}
+
+/* Signup form for smaller devices */
+@media (max-width: 768px) {
+.signup-container {
+  width: 90%;
+  padding: 20px;
+  margin: 30px auto;
+}
+
+.signup-container h3 {
+  font-size: 22px;
+}
+
+input, button {
+  font-size: 14px;
+}
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+.footer-container {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-section {
+  width: 100%;
+}
+
+.footer-section h2, .footer-section h3 {
+  font-size: 18px;
+}
+
+.social-icons img {
+  width: 30px;
+}
+}
