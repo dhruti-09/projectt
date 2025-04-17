@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQs - Rental Property Wishlist</title>
+   <link rel="stylesheet" href="FQAs.css">
+</head>
+<body>
+
+  <div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">What is Rental Property Wishlist?</button>
+      <div class="faq-answer">
+        <p>It's a platform where users can find or list rental properties easily, without brokers or hidden charges.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is it free to use?</button>
+      <div class="faq-answer">
+        <p>Yes! Browsing listings is absolutely free. Listing your property may have minimal charges depending on the plan.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I contact a property owner?</button>
+      <div class="faq-answer">
+        <p>You can directly message or call the contact number listed with each property. No middlemen involved.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Are listings verified?</button>
+      <div class="faq-answer">
+        <p>Yes, our team manually reviews and verifies listings to ensure authenticity and safety.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I list my own property?</button>
+      <div class="faq-answer">
+        <p>Create an account, click on "List Property", and fill in all the required details. It takes just 5 minutes!</p>
+      </div>
+    </div>
+
+    <!-- Additional FAQs below -->
+
+    <div class="faq-item">
+      <button class="faq-question">Can I save properties to view later?</button>
+      <div class="faq-answer">
+        <p>Yes! You can add properties to your wishlist and access them anytime from your dashboard.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do I need to create an account to browse listings?</button>
+      <div class="faq-answer">
+        <p>No account is required to browse listings. However, you'll need one to save properties or list your own.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I report a fake or spam listing?</button>
+      <div class="faq-answer">
+        <p>Every listing has a 'Report' button. Click it and provide the reason. Our team will review it quickly.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is there a mobile app?</button>
+      <div class="faq-answer">
+        <p>Our mobile app is under development. Meanwhile, the website is fully responsive and mobile-friendly.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I edit or delete my listing later?</button>
+      <div class="faq-answer">
+        <p>Yes, log into your account, go to "My Listings", and you can edit or remove any property anytime.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

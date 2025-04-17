@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Property Wishlist</title>
+    <link rel="stylesheet" href="contect.css">
+    <script>
+    // function validateForm() {
+    //   // const pass = document.getElementById("password").value;
+    //   // const confirmPass = document.getElementById("confirm-password").value;
+    //   // const errorMsg = document.getElementById("error-msg");
+
+    //   // if (pass !== confirmPass) {
+    //   //   errorMsg.textContent = "not submitted!";
+    //   //   return false;
+    //   // }
+
+    //   errorMsg.textContent = "";
+    //   alert("submitted succesfully!");
+    //   return true;
+    // }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container2">
+        <div class="logo">
+            <img src="logo.jpeg" height="10%" width="10%">
+            <h1>Rent or Vent</h1>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="listing.html">Listings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sign up.html" class="button">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>  
+    </div>
+</header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                
+
+                <h1>Contact for Rent or Went</h1>
+            <p>Join our community of renters and landlords to discover your perfect rental property or list your property for rent.</p>
+            </div>
+        </section>
+
+        <section class="wishlist">
+            <div class="container">
+                <h2>Create Your Wishlist</h2>
+                 <form onsubmit="return validateForm();">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="enter your name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="enter your email id">
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="enter Contact number">
+
+                    <label for="property-type">Property Type:</label>
+                    <select id="property-type" name="property-type">
+                        <option value="apartment">Apartment</option>
+                        <option value="house">House</option>
+                        <option value="villa">Villa</option>
+                    </select>
+
+                    <label for="location">Preferred Location:</label>
+                    <input type="text" id="location" name="location" required placeholder="enter location">
+
+                    <label for="price-range">Price Range:</label>
+                    <input type="text" id="price-range" name="price-range" placeholder="e.g. Rs.15000  -  Rs.85000" required>
+
+                   
+                    <input type="submit" value="submit">
+                    
+                    <input type="reset" value="Reset">
+            
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+          
+          <!-- Left Column: Site Info -->
+          <div class="footer-section">
+            <h2>Rental Property Wishlist</h2>
+            <p>&copy; 2025 All rights reserved.</p>
+            <p>📞 +91 9727179353</p>
+            <p>📧 support@rentalwishlist.com</p>
+            <p>🕒 Mon–Fri: 9am - 6pm</p>
+          </div>
+      
+          <!-- Middle Column: Quick Links & Newsletter -->
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="listing.html">Properties</a></li>
+              <li><a href="FQAs.html">FAQs</a></li>
+              <li><a href="pp.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+            <!-- <h3>Subscribe</h3>
+            <p>Get latest rental alerts & tips.</p>
+            <input type="email" placeholder="Your email">
+            <button>Subscribe</button>
+          </div> -->
+      
+          <!-- Right Column: Socials + Apps + Map -->
+          <div class="footer-section">
+            <h3>Connect with us</h3>
+            <div class="social-icons">
+              <!-- <li><a href=”#”><i class="fa fa-facebook"></i></a></li> -->
+              <a href="#"><img src="insta.jpeg" alt="Instagram">
+                <span>rental_property09</span><br><br></a>
+              <a href="#"><img src="linkedin.png" alt="LinkedIn">
+                <span>/in/your-linkedin-id</span><br></a>
+              
+            </div>
+      
+            <!-- <h3>Download App</h3>
+            <div class="app-buttons">
+              <a href="#"><img src="google-play-badge.png" alt="Google Play"></a>
+              <a href="#"><img src="app-store-badge.png" alt="App Store"></a>
+            </div> -->
+      
+            <!-- <h3>Office Location</h3>
+            <p>123, Satellite Road, Ahmedabad, Gujarat - 380015</p>
+            <iframe src="https://maps.google.com/maps?q=ahmedabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" style="width:100%; height:100px;"></iframe> -->
+          </div>
+        </div>
+        </footer>
+</body>
+<script>
+  function validateForm() {
+    alert("Form submitted successfully!");
+    return true; // Allow the form to submit
+  }
+</script>
+
+</html>
